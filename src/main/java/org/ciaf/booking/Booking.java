@@ -24,6 +24,10 @@ public class Booking {
         this.totalCost = totalCost;
     }
 
+    public Booking(int idBooking) {
+        this.idBooking = idBooking;
+    }
+
     public void confirmReservation(Vehicle vehicle){
         Period totalDays = Period.between(startDate,endDate);
         int days = totalDays.getDays();
