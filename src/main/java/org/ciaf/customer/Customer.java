@@ -21,8 +21,23 @@ public class Customer {
     public void reserveVehicle(Vehicle vehicle, LocalDate startDate, LocalDate endDate, boolean insurance, boolean gps){
         if (vehicle.isAvailability()){
             bookings.add(new Booking(idCustomer));
+            for (Booking booking : bookings){
+                booking.confirmReservation(vehicle);
+            }
         }else{
             System.out.println("The vehicle is not available on the selected dates.");
         }
+    }
+
+    public int getIdCustomer() {
+        return idCustomer;
+    }
+
+    public String getNameCustomer() {
+        return nameCustomer;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
     }
 }
