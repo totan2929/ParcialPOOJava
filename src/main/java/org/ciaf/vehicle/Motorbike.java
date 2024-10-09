@@ -1,4 +1,4 @@
-package org.ciaf;
+package org.ciaf.vehicle;
 
 public class Motorbike extends Vehicle {
     private double cylinderCapacity;

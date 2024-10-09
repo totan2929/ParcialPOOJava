@@ -1,6 +1,6 @@
-package org.ciaf;
+package org.ciaf.vehicle;
 
-abstract class Vehicle {
+public abstract class Vehicle {
     protected int idVehicle;
     protected String brand;
     protected String model;
@@ -51,6 +51,10 @@ abstract class Vehicle {
 
     public double getDailyCost() {
         return dailyCost;
+    }
+
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
     }
 
     public boolean isAvailability() {

@@ -1,4 +1,4 @@
-package org.ciaf;
+package org.ciaf.vehicle;
 
 public class Car extends Vehicle {
     private String typeFuel;

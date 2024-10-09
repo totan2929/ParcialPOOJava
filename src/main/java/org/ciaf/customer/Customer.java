@@ -1,4 +1,7 @@
-package org.ciaf;
+package org.ciaf.customer;
+
+import org.ciaf.booking.Booking;
+import org.ciaf.vehicle.Vehicle;
 
 import java.time.LocalDate;
 import java.util.List;
