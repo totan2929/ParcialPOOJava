@@ -17,6 +17,22 @@ abstract class Vehicle {
         this.availability = availability;
     }
 
+    public double calculatePrice(int days, boolean insurance, boolean gps){
+
+        double totalCost = dailyCost * days;
+        double costInsurance = dailyCost * 0.90 * days;
+        double costGps = 5 * days;
+
+        if (insurance && gps){
+            totalCost += costInsurance + costGps;
+        } else if (insurance && !gps) {
+            totalCost += costInsurance;
+        } else if (!insurance && gps) {
+            totalCost += costGps;
+        }
+        return totalCost;
+    }
+
     public int getIdVehicle() {
         return idVehicle;
     }
