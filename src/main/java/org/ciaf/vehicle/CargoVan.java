@@ -8,7 +8,5 @@ public class CargoVan extends Vehicle {
         this.capacityLoad = capacityLoad;
     }
 
-    public double getCapacityLoad() {
-        return capacityLoad;
-    }
+
 }

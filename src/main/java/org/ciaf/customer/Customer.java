@@ -29,15 +29,5 @@ public class Customer {
 
     }
 
-    public int getIdCustomer() {
-        return idCustomer;
-    }
 
-    public String getNameCustomer() {
-        return nameCustomer;
-    }
-
-    public List<Booking> getBookings() {
-        return bookings;
-    }
 }

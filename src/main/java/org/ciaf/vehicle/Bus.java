@@ -8,7 +8,5 @@ public class Bus extends Vehicle {
         this.capacityPassenger = capacityPassenger;
     }
 
-    public int getCapacityPassenger() {
-        return capacityPassenger;
-    }
+
 }

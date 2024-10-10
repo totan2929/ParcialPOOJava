@@ -8,7 +8,5 @@ public class Motorbike extends Vehicle {
         this.cylinderCapacity = cylinderCapacity;
     }
 
-    public double getCylinderCapacity() {
-        return cylinderCapacity;
-    }
+
 }

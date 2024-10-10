@@ -68,27 +68,4 @@ public class Booking {
         }
     }
 
-    public int getIdBooking() {
-        return idBooking;
-    }
-
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public LocalDate getEnddate() {
-        return endDate;
-    }
-
-    public double getTotalCost() {
-        return totalCost;
-    }
 }

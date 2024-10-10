@@ -35,9 +35,6 @@ public abstract class Vehicle {
         return totalCost;
     }
 
-    public int getIdVehicle() {
-        return idVehicle;
-    }
 
     public String getBrand() {
         return brand;
@@ -47,13 +44,6 @@ public abstract class Vehicle {
         return model;
     }
 
-    public int getYearVehicle() {
-        return yearVehicle;
-    }
-
-    public double getDailyCost() {
-        return dailyCost;
-    }
 
     public void setAvailability(boolean availability) {
         this.availability = availability;

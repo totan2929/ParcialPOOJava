@@ -8,7 +8,5 @@ public class Car extends Vehicle {
         this.typeFuel = typeFuel;
     }
 
-    public String getTypeFuel() {
-        return typeFuel;
-    }
+
 }
