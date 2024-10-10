@@ -24,9 +24,6 @@ public class Booking {
         this.totalCost = totalCost;
     }
 
-    public Booking(int idBooking) {
-        this.idBooking = idBooking;
-    }
 
     public void confirmReservation(Vehicle vehicle){
         Period totalDays = Period.between(startDate,endDate);
@@ -38,21 +35,21 @@ public class Booking {
         int gps1;
         Scanner sc = new Scanner(System.in);
         if (vehicle.isAvailability() == true){
-            System.out.println("Deseas realizar la reserva:\n" +
-                    "Digita\n" +
-                    "1. Si\n" +
+            System.out.println("Do You want to make a reservation:\n" +
+                    "Writes\n" +
+                    "1. Yes\n" +
                     "2. No");
             confirm = sc.nextInt();
             if (confirm == 1){
                 vehicle.setAvailability(false);
-                System.out.println("Deseas incluir seguro en la reserva:\n" +
-                        "Digita\n" +
-                        "1. Si\n" +
+                System.out.println("Do You want to include insurance in the reservation:\n" +
+                        "Writes\n" +
+                        "1. Yes\n" +
                         "2. No");
                 insurance1 = sc.nextInt();
-                System.out.println("Deseas incluir GPS en la reserva:\n" +
-                        "Digita\n" +
-                        "1. Si\n" +
+                System.out.println("Do You want to include GPS in the reservation:\n" +
+                        "Writes\n" +
+                        "1. Yes\n" +
                         "2. No");
                 gps1 = sc.nextInt();
                 if (insurance1 == 1){
@@ -63,7 +60,7 @@ public class Booking {
                 }
                 totalCost =vehicle.calculatePrice(days, insurance, gps);
 
-                System.out.println("The total cost without insurance and without GPS is: " + totalCost);
+                System.out.println("The total cost without insurance and without GPS is: " + "$" +totalCost);
             }
 
         }else {

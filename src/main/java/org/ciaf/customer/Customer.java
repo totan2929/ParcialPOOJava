@@ -10,7 +10,7 @@ import java.util.List;
 public class Customer {
     private int idCustomer;
     private String nameCustomer;
-    private List<Booking> bookings;
+    public List<Booking> bookings;
 
     public Customer(int idCustomer, String nameCustomer, List<Booking> bookings) {
         this.idCustomer = idCustomer;
@@ -26,14 +26,7 @@ public class Customer {
 
 
     public void reserveVehicle(Vehicle vehicle, LocalDate startDate, LocalDate endDate, boolean insurance, boolean gps){
-        if (vehicle.isAvailability()){
-            bookings.add(new Booking(idCustomer));
-            for (Booking booking : bookings){
-                booking.confirmReservation(vehicle);
-            }
-        }else{
-            System.out.println("The vehicle is not available on the selected dates.");
-        }
+
     }
 
     public int getIdCustomer() {

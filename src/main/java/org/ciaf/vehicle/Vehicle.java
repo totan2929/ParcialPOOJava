@@ -17,6 +17,8 @@ public abstract class Vehicle {
         this.availability = availability;
     }
 
+
+
     public double calculatePrice(int days, boolean insurance, boolean gps){
 
         double totalCost = dailyCost * days;

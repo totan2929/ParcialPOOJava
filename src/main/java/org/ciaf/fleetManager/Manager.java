@@ -19,9 +19,9 @@ public class Manager {
 
 
 
-    public boolean checkAvailability(Vehicle vehicle, LocalDate startDate, LocalDate endDate){
+    public boolean checkAvailability(Vehicle vehicle){
         if (vehicle.isAvailability() ){
-            System.out.println("Vehicle available");
+            System.out.println( vehicle.getBrand() + " is  a Vehicle available");
         }
         return vehicle.isAvailability();
     }
@@ -43,4 +43,6 @@ public class Manager {
     public List<Vehicle> getFleet() {
         return fleet;
     }
+
+
 }
