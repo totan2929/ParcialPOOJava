@@ -18,6 +18,13 @@ public class Customer {
         this.bookings = new ArrayList<>();
     }
 
+    public Customer(int idCustomer, String nameCustomer) {
+        this.idCustomer = idCustomer;
+        this.nameCustomer = nameCustomer;
+        this.bookings = new ArrayList<>();
+    }
+
+
     public void reserveVehicle(Vehicle vehicle, LocalDate startDate, LocalDate endDate, boolean insurance, boolean gps){
         if (vehicle.isAvailability()){
             bookings.add(new Booking(idCustomer));

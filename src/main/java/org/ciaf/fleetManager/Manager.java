@@ -13,6 +13,12 @@ public class Manager {
         this.fleet = new ArrayList<>();
     }
 
+    public Manager() {
+        this.fleet = new ArrayList<>();
+    }
+
+
+
     public boolean checkAvailability(Vehicle vehicle, LocalDate startDate, LocalDate endDate){
         if (vehicle.isAvailability() ){
             System.out.println("Vehicle available");
@@ -28,6 +34,10 @@ public class Manager {
             }
         }
         return availables;
+    }
+
+    public  void addVehicle(Vehicle vehicle){
+        fleet.add(vehicle);
     }
 
     public List<Vehicle> getFleet() {
